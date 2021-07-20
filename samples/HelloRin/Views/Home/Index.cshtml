@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <h2>Rin</h2>
+        <ul>
+            <li><a class="btn btn-success" href="/rin/" target="_blank">Open Webhook (New window)</a></li>
+        </ul>
+    </div>
+    <div class="col-md-3">
+        <h2>Get Requests</h2>
+        <ul>
+            <li><a href="/MyApi/AsOctetStream">Response as octet-stream</a></li>
+            <li><a href="/MyApi/AsJson">Response as JSON</a></li>
+            <li><a href="/MyApi/Delay?ms=5000">Delay response for 5sec</a></li>
+            <li><a href="/MyApi/Throw">Raise exception while processing</a></li>
+            <li><a href="/MyApi/LongResult">Slow stream</a></li>
+            <li><a href="/MyApi/Timeline">Timeline scopes</a></li>
+            <li><a href="/MyApi/InvokeGrpc">gRPC Request/Response</a></li>
+            <li><a href="/MyApi/CustomContentType">View MessagePack as JSON</a></li>
+            <li><a href="/MyApi/DatabaseAccess">Access to the database (Entity Framework Core integration)</a></li>
+        </ul>
+    </div>
+    <div class="col-md-3">
+        <h2>Post Requests</h2>
+        <ul>
+            <li><a href="#" onclick="fetch('/MyApi/PostWithFormBody', { method: 'POST', headers: new Headers({'Content-Type':'application/x-www-form-urlencoded'}), body: new URLSearchParams({ bodyValueA: 'Hello!', bodyValueB: 12345, a:1, b:2, c:3, d:4, e:5, f:6, g:7, h:8 }).toString() }); alert('sent');">POST: with x-www-form-urlencoded</a></li>
+            <li><a href="#" onclick="fetch('/MyApi/PostWithFormData', {
+    method: 'POST', headers: new Headers({ 'Content-Type': 'application/json' }), body: JSON.stringify({ bodyValueA: 'Hello!', bodyValueB: 12345 }) }); alert('sent');">POST: with JSON body</a></li>
+        </ul>
+    </div>
+</div>

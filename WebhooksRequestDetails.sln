@@ -1,0 +1,165 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWebhook", "samples\HelloRin\HelloWebhook.csproj", "{921C0263-C56A-4332-897C-2107D0E0DDF2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{B82C9F89-AD8F-473B-AA41-3061CD0FE9DF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Webhook.Mvc.Frontend", "Webhook.Mvc.Frontend", "{6A531FB8-3FE0-410B-9956-D21B33141822}"
+	ProjectSection(SolutionItems) = preProject
+		src\Rin.Mvc.Frontend\.eslintignore = src\Rin.Mvc.Frontend\.eslintignore
+		src\Rin.Mvc.Frontend\.eslintrc.json = src\Rin.Mvc.Frontend\.eslintrc.json
+		src\Rin.Mvc.Frontend\.prettierrc = src\Rin.Mvc.Frontend\.prettierrc
+		src\Rin.Mvc.Frontend\package.json = src\Rin.Mvc.Frontend\package.json
+		src\Rin.Mvc.Frontend\tsconfig.json = src\Rin.Mvc.Frontend\tsconfig.json
+		src\Rin.Mvc.Frontend\webpack.config.js = src\Rin.Mvc.Frontend\webpack.config.js
+		src\Rin.Mvc.Frontend\webpack.dev.config.js = src\Rin.Mvc.Frontend\webpack.dev.config.js
+		src\Rin.Mvc.Frontend\webpack.prod.config.js = src\Rin.Mvc.Frontend\webpack.prod.config.js
+		src\Rin.Mvc.Frontend\yarn.lock = src\Rin.Mvc.Frontend\yarn.lock
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "public", "public", "{384F8A77-FBFE-4DCD-97B1-289B546F5986}"
+	ProjectSection(SolutionItems) = preProject
+		src\Rin.Mvc.Frontend\public\index.html = src\Rin.Mvc.Frontend\public\index.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7389E1E2-1E4D-4D2D-83EB-935B763FB2DB}"
+	ProjectSection(SolutionItems) = preProject
+		src\Rin.Mvc.Frontend\src\App.css = src\Rin.Mvc.Frontend\src\App.css
+		src\Rin.Mvc.Frontend\src\App.tsx = src\Rin.Mvc.Frontend\src\App.tsx
+		src\Rin.Mvc.Frontend\src\index.html = src\Rin.Mvc.Frontend\src\index.html
+		src\Rin.Mvc.Frontend\src\index.tsx = src\Rin.Mvc.Frontend\src\index.tsx
+		src\Rin.Mvc.Frontend\src\Store.ts = src\Rin.Mvc.Frontend\src\Store.ts
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Webhook", "Webhook", "{C568954B-3E7B-4CDE-8EB6-987BD51F408E}"
+	ProjectSection(SolutionItems) = preProject
+		src\Webhook\Resources.cs = src\Webhook\Resources.cs
+		src\Webhook\Webhook.csproj = src\Webhook\Webhook.csproj
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Channel", "Channel", "{8F841D12-2AE1-41EB-B63C-127C951DF34C}"
+	ProjectSection(SolutionItems) = preProject
+		src\Webhook\Channel\HubClientBase.cs = src\Webhook\Channel\HubClientBase.cs
+		src\Webhook\Channel\HubClientProxy.cs = src\Webhook\Channel\HubClientProxy.cs
+		src\Webhook\Channel\HubClientProxyBuilder.cs = src\Webhook\Channel\HubClientProxyBuilder.cs
+		src\Webhook\Channel\HubInvoker\HubInvocationResult.cs = src\Webhook\Channel\HubInvoker\HubInvocationResult.cs
+		src\Webhook\Channel\HubInvoker\HubInvokeMessage.cs = src\Webhook\Channel\HubInvoker\HubInvokeMessage.cs
+		src\Webhook\Channel\HubInvoker\HubInvoker.cs = src\Webhook\Channel\HubInvoker\HubInvoker.cs
+		src\Webhook\Channel\HubInvoker\HubMethodDefinition.cs = src\Webhook\Channel\HubInvoker\HubMethodDefinition.cs
+		src\Webhook\Channel\IHub.cs = src\Webhook\Channel\IHub.cs
+		src\Webhook\Channel\HubInvoker\InvokerHelper.cs = src\Webhook\Channel\HubInvoker\InvokerHelper.cs
+		src\Webhook\Channel\WebhookChannel.cs = src\Webhook\Channel\WebhookChannel.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{FD6CA9EE-63EF-457F-BC57-A99714E77F36}"
+	ProjectSection(SolutionItems) = preProject
+		src\Webhook\Core\BodyDataTransformer.cs = src\Webhook\Core\BodyDataTransformer.cs
+		src\Webhook\Core\BodyDataTransformerPipeline.cs = src\Webhook\Core\BodyDataTransformerPipeline.cs
+		src\Webhook\Core\BodyDataTransformerSet.cs = src\Webhook\Core\BodyDataTransformerSet.cs
+		src\Webhook\Core\BodyDataTransformResult.cs = src\Webhook\Core\BodyDataTransformResult.cs
+		src\Webhook\Core\Record\HttpRequestRecord.cs = src\Webhook\Core\Record\HttpRequestRecord.cs
+		src\Webhook\Core\Event\IMessageEventBus.cs = src\Webhook\Core\Event\IMessageEventBus.cs
+		src\Webhook\Core\Event\IMessageSubscriber.cs = src\Webhook\Core\Event\IMessageSubscriber.cs
+		src\Webhook\Core\Storage\InMemoryRecordStorage.cs = src\Webhook\Core\Storage\InMemoryRecordStorage.cs
+		src\Webhook\Core\InspectorOptions.cs = src\Webhook\Core\InspectorOptions.cs
+		src\Webhook\Core\Record\IRecord.cs = src\Webhook\Core\Record\IRecord.cs
+		src\Webhook\Core\Record\IRecordStorage.cs = src\Webhook\Core\Record\IRecordStorage.cs
+		src\Webhook\Core\Record\ITimelineEvent.cs = src\Webhook\Core\Record\ITimelineEvent.cs
+		src\Webhook\Core\Record\ITimelineScope.cs = src\Webhook\Core\Record\ITimelineScope.cs
+		src\Webhook\Core\Record\ITimelineStamp.cs = src\Webhook\Core\Record\ITimelineStamp.cs
+		src\Webhook\Core\Event\MessageEventBus.cs = src\Webhook\Core\Event\MessageEventBus.cs
+		src\Webhook\Core\Record\NullTimelineScope.cs = src\Webhook\Core\Record\NullTimelineScope.cs
+		src\Webhook\Core\Event\RequestEventMessage.cs = src\Webhook\Core\Event\RequestEventMessage.cs
+		src\Webhook\Core\RequestRecorderOptions.cs = src\Webhook\Core\RequestRecorderOptions.cs
+		src\Webhook\Core\Event\StoreBodyEventMessage.cs = src\Webhook\Core\Event\StoreBodyEventMessage.cs
+		src\Webhook\Core\Record\TimelineEventCategory.cs = src\Webhook\Core\Record\TimelineEventCategory.cs
+		src\Webhook\Core\Record\TimelineScope.cs = src\Webhook\Core\Record\TimelineScope.cs
+		src\Webhook\Core\Record\TimelineStamp.cs = src\Webhook\Core\Record\TimelineStamp.cs
+		src\Webhook\Core\WebhookOptions.cs = src\Webhook\Core\WebhookOptions.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extensions", "Extensions", "{8AD86CBC-111E-4876-A267-6D5936A1257F}"
+	ProjectSection(SolutionItems) = preProject
+		src\Webhook\Extensions\ResponseDataCaptureStreamExtensions.cs = src\Webhook\Extensions\ResponseDataCaptureStreamExtensions.cs
+		src\Webhook\Extensions\TaskExtensions.cs = src\Webhook\Extensions\TaskExtensions.cs
+		src\Webhook\Extensions\WebhookBuilder.cs = src\Webhook\Extensions\WebhookBuilder.cs
+		src\Webhook\Extensions\WebhookBuilderExtensions.cs = src\Webhook\Extensions\WebhookBuilderExtensions.cs
+		src\Webhook\Extensions\WebhookLoggerExtensions.cs = src\Webhook\Extensions\WebhookLoggerExtensions.cs
+		src\Webhook\Extensions\WebhookMiddlewareExtensions.cs = src\Webhook\Extensions\WebhookMiddlewareExtensions.cs
+		src\Webhook\Extensions\WebhookSerivceExtensions.cs = src\Webhook\Extensions\WebhookSerivceExtensions.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Features", "Features", "{A814845F-C95A-4695-B9A7-4451FF8D3420}"
+	ProjectSection(SolutionItems) = preProject
+		src\Webhook\Features\CaptureHttpResponseBodyFeature.cs = src\Webhook\Features\CaptureHttpResponseBodyFeature.cs
+		src\Webhook\Features\IWebhookRequestRecordingFeature.cs = src\Webhook\Features\IWebhookRequestRecordingFeature.cs
+		src\Webhook\Features\WebhookRequestRecordingFeature.cs = src\Webhook\Features\WebhookRequestRecordingFeature.cs
+		src\Webhook\Features\WebhookRequestRecordingFeatureAccessor.cs = src\Webhook\Features\WebhookRequestRecordingFeatureAccessor.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hubs", "Hubs", "{7B9CA30C-B1BC-4E7F-A410-AC62FA509932}"
+	ProjectSection(SolutionItems) = preProject
+		src\Webhook\Hubs\Payloads\BodyDataPayload.cs = src\Webhook\Hubs\Payloads\BodyDataPayload.cs
+		src\Webhook\Hubs\HubClients\IWebhookCoreHubClient.cs = src\Webhook\Hubs\HubClients\IWebhookCoreHubClient.cs
+		src\Webhook\Hubs\Payloads\RequestEventPayload.cs = src\Webhook\Hubs\Payloads\RequestEventPayload.cs
+		src\Webhook\Hubs\Payloads\RequestRecordDetailPayload.cs = src\Webhook\Hubs\Payloads\RequestRecordDetailPayload.cs
+		src\Webhook\Hubs\WebhookCoreHub.cs = src\Webhook\Hubs\WebhookCoreHub.cs
+		src\Webhook\Hubs\Payloads\WebhookServerInfoPayload.cs = src\Webhook\Hubs\Payloads\WebhookServerInfoPayload.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IO", "IO", "{8EBD2AFE-452E-4449-A288-64B9C64420C1}"
+	ProjectSection(SolutionItems) = preProject
+		src\Webhook\IO\CapturePipeWriter.cs = src\Webhook\IO\CapturePipeWriter.cs
+		src\Webhook\IO\DataCaptureStream.cs = src\Webhook\IO\DataCaptureStream.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logging", "Logging", "{76F486F6-13DD-4E47-84E5-4A77A48CFFCE}"
+	ProjectSection(SolutionItems) = preProject
+		src\Webhook\Logging\WebhookLogger.cs = src\Webhook\Logging\WebhookLogger.cs
+		src\Webhook\Logging\WebhookLoggerProvider.cs = src\Webhook\Logging\WebhookLoggerProvider.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Middlewares", "Middlewares", "{524D5C6C-AA72-4A33-A9E2-4F18C1471B59}"
+	ProjectSection(SolutionItems) = preProject
+		src\Webhook\Middlewares\ChannelMiddleware.cs = src\Webhook\Middlewares\ChannelMiddleware.cs
+		src\Webhook\Middlewares\DiagnosticsMiddleware.cs = src\Webhook\Middlewares\DiagnosticsMiddleware.cs
+		src\Webhook\Middlewares\DownloadMiddleware.cs = src\Webhook\Middlewares\DownloadMiddleware.cs
+		src\Webhook\Middlewares\Api\GetDetailByIdMiddleware.cs = src\Webhook\Middlewares\Api\GetDetailByIdMiddleware.cs
+		src\Webhook\Middlewares\RequestRecorderMiddleware.cs = src\Webhook\Middlewares\RequestRecorderMiddleware.cs
+		src\Webhook\Middlewares\ResourcesMiddleware.cs = src\Webhook\Middlewares\ResourcesMiddleware.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{921C0263-C56A-4332-897C-2107D0E0DDF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{921C0263-C56A-4332-897C-2107D0E0DDF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{921C0263-C56A-4332-897C-2107D0E0DDF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{921C0263-C56A-4332-897C-2107D0E0DDF2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{921C0263-C56A-4332-897C-2107D0E0DDF2} = {B82C9F89-AD8F-473B-AA41-3061CD0FE9DF}
+		{384F8A77-FBFE-4DCD-97B1-289B546F5986} = {6A531FB8-3FE0-410B-9956-D21B33141822}
+		{7389E1E2-1E4D-4D2D-83EB-935B763FB2DB} = {6A531FB8-3FE0-410B-9956-D21B33141822}
+		{8F841D12-2AE1-41EB-B63C-127C951DF34C} = {C568954B-3E7B-4CDE-8EB6-987BD51F408E}
+		{FD6CA9EE-63EF-457F-BC57-A99714E77F36} = {C568954B-3E7B-4CDE-8EB6-987BD51F408E}
+		{8AD86CBC-111E-4876-A267-6D5936A1257F} = {C568954B-3E7B-4CDE-8EB6-987BD51F408E}
+		{A814845F-C95A-4695-B9A7-4451FF8D3420} = {C568954B-3E7B-4CDE-8EB6-987BD51F408E}
+		{7B9CA30C-B1BC-4E7F-A410-AC62FA509932} = {C568954B-3E7B-4CDE-8EB6-987BD51F408E}
+		{8EBD2AFE-452E-4449-A288-64B9C64420C1} = {C568954B-3E7B-4CDE-8EB6-987BD51F408E}
+		{76F486F6-13DD-4E47-84E5-4A77A48CFFCE} = {C568954B-3E7B-4CDE-8EB6-987BD51F408E}
+		{524D5C6C-AA72-4A33-A9E2-4F18C1471B59} = {C568954B-3E7B-4CDE-8EB6-987BD51F408E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {739B12D9-4F90-4F23-B6FE-D0A94CFB1608}
+	EndGlobalSection
+EndGlobal

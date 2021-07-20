@@ -1,0 +1,15 @@
+{
+    "include": ["src/**/*", "typings/**/*"],
+    "exclude": ["node_modules"],
+    "compilerOptions": {
+        "target": "es2019",
+        "module": "esnext",
+        "jsx": "react",
+        "strict": true,
+        "moduleResolution": "node",
+        "rootDirs": ["src"],
+        "experimentalDecorators": true,
+        "sourceMap": true,
+        "allowSyntheticDefaultImports": true
+    }
+}
